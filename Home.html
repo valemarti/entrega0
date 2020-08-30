@@ -14,16 +14,17 @@
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="site-header sticky-top py-1 bg-dark">
+      <nav class="site-header sticky-top py-1 bg-dark">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2 d-none d-md-inline-block" href="Home.html">Inicio</a>
         <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
         <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
         <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
         <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
-        <a class="py-2 d-none d-md-inline-block" id="logged">Usuario</a>
+        <div id="userInfo"></div>
       </div>
     </nav>
+
     <main role="main">
       <section class="jumbotron text-center">
         <div class="m-5">
@@ -32,6 +33,7 @@
       </section>
       <div class="album py-5 bg-light">
         <div class="container">
+
           <div class="row">
             <div class="col-md-4">
               <a href="categories.html" class="card mb-4 shadow-sm custom-card">
@@ -88,6 +90,7 @@
                 </a>
             </div>
           </div>
+
           <div class="row">
               <a type="button" class="btn btn-light btn-lg btn-block" href="categories.html">Ver todas</a>
           </div>
@@ -103,8 +106,9 @@
         <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
       </div>
     </footer>
-    <script window.location.href = 'Home.html'></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/user-info.js"></script>
   </body>
+</html>

@@ -19,7 +19,7 @@
   <link href="css/styles.css" rel="stylesheet">
 
   <style>
-    html,   body {
+    html, body {
       height: 100%;
     }
 
@@ -40,13 +40,13 @@
     #formContent {
       -webkit-border-radius: 10px 10px 10px 10px;
       border-radius: 10px 10px 10px 10px;
-      background: #fff;
+      background: whitesmoke;
       padding: 30px;
       width: 300px;
       min-width: 300px;
       max-width: 300px;
-      -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-      box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 30px 60px 0 black;
+      box-shadow: 0 30px 60px 0 black;
       text-align: center;
     }
 
@@ -57,13 +57,13 @@
 </head>
 
 <body class="text-center">
+  <form action="Home.html" id="formLog"></form>
   <div class="container p-5 animate__animated animate__bounceInLeft" id="formContent">
-   
-    <h2>Iniciar sesión</h2>
+      <h2>Iniciar sesión</h2>
     <div class="wrapper fadeInDown text-center">
 
-        <input type="user" name="usr" id="usr" placeholder="Usuario" required>
-        <input type="password" name="psw" id="psw" placeholder="Contraseña" required>
+        <input type="user" name="user" id="user" placeholder="Usuario" required>
+        <input type="password" name="pswd" id="pswd" placeholder="Contraseña" required>
         <p><input type="checkbox" name="rembember" id="rembember"> Recordarme</p>
         <button id="submit">Ingresar</button>
         <hr>
