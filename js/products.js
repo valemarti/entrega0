@@ -101,15 +101,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         }
     });
 
-    document.getElementById("sortAsc").addEventListener("click", function(){
-        sortAndShowProducts(ORDER_ASC_BY_NAME);
-    });
-
-    document.getElementById("sortDesc").addEventListener("click", function(){
-        sortAndShowProducts(ORDER_DESC_BY_NAME);
-    });
-
-    document.getElementById("sortAscCost").addEventListener("click", function(){
+      document.getElementById("sortAscCost").addEventListener("click", function(){
         sortAndShowProducts(ORDER_ASC_BY_COST);
     });
     
