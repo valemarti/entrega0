@@ -26,14 +26,92 @@
       <div id="userInfo"></div>
     </div>
   </nav>
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 3 (Fecha de entrega: 13/09/2020) y Entrega 4 (Fecha de entrega: 20/09/2020).</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+ 
+  <main role="main">
+    <div class="container mt-5">
+      <div class="text-center p-4">
+        <h2>Descripción del producto</h2>
+        <p class="lead">Encontrarás aquí toda la información del producto seleccionado.</p>
+        <p class="small alert-warning py-3"><strong>Nota: </strong>por simplicidad, cualquiera sea el producto
+          seleccionado previamente, siempre se visualizará presente: <strong>Chevrolet Onix Joy.</strong></p>
+      </div>
+      <h3 id="productName"></h3>
+      <hr class="my-3">
+      <dl>
+        <dt>Precio</dt>
+        <dd>
+          <p id="productCost"></p>
+        </dd>
+
+        <dt>Descripción</dt>
+        <dd>
+          <p id="productDesc"></p>
+        </dd>
+
+        <dt>Categoría</dt>
+        <dd>
+          <a href="category-info.html">
+            <p id="productCategory"></p>
+          </a>
+        </dd>
+
+        <dt>Cantidad de vendidos</dt>
+        <dd>
+          <p id="productSoldCount"></p>
+        </dd>
+
+        <dt>Imágenes ilustrativas</dt>
+        <dd>
+          <div class="row text-center text-lg-left pt-2" id="productImagesGallery">
+          </div>
+        </dd>
+
+        <dt>Productos relacionados</dt>
+        <hr class="my-3">
+        <dd>
+          <div class="container-fluid">
+            <div class="row" id="relatedProducts">
+            </div>
+          </div>
+        </dd>
+        <br>
+        <br>
+        <dt>¡Tu opinión nos importa!</dt>
+        <hr class="my-3">
+        <dd>
+          <div class="container-fluid">
+            <div id="newComment">
+              <form>
+                <div class="form-group">
+                  <textarea id="textArea" name="comment" class="form-control"
+                    placeholder="Haz un comentario"></textarea>
+                </div>
+                
+                <div class="text-lg-left">
+                  <span class="fa fa-star" id="star1" onclick="add(1)"></span>
+                  <span class="fa fa-star" id="star2" onclick="add(2)"></span>
+                  <span class="fa fa-star" id="star3" onclick="add(3)"></span>
+                  <span class="fa fa-star" id="star4" onclick="add(4)"></span>
+                  <span class="fa fa-star" id="star5" onclick="add(5)"></span>
+                </div>
+                <div class="text-right">
+                <button type="button" class="btn btn-primary" id="enviar" name="button1">
+                  <i></i>Enviar</button>
+                </div>
+
+              </form>
+            </div>
+            <br>
+            <br>
+            <dt>Comentarios</dt>
+            <hr class="my-3">
+            <div id="comment">
+            </div>
+          </div>
+        </dd>
+      </dl>
     </div>
-  </div>
+  </main>
   <footer class="text-muted">
     <div class="container">
       <p class="float-right">
