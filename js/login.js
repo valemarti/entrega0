@@ -29,16 +29,14 @@ function onSignIn(googleUser) {
     let user = document.getElementById("user").value;
     let password = document.getElementById("pswd").value;
     
-    if(user != undefined && password != undefined){
+    if(user != "" && password != ""){
       logged(user);
     }
  });
 
 
   function logged (name){
-    if(name.trim()===""){
-      alert("El dato esta vacío")}
-      else{
+    if(name != undefined){
       let setlocalStorage = window.localStorage;
       setlocalStorage.setItem("user-logged", JSON.stringify({username:name}));
       window.location.href = "Home.html"
